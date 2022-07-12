@@ -28,7 +28,7 @@ html {
 }
 
 body {
-    background-color: var(--main-color);
+    background-color: black;
     height: 100vh;
 }
 
@@ -52,19 +52,20 @@ section {
     font-size: 2rem;
 }
 
-/* html, body, #cesiumContainer {	
+#cesiumContainer {	
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
-} */
+} 
 
 /*! header start */
 
-.header .logo img {
+/* .header .logo img {
     height: 10rem;
-}
+    
+} */
 
 .header {
     background-color: transparent;
@@ -82,9 +83,10 @@ section {
 
 .header .navbar a {
     margin: 0 1rem;
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: white;
     border-bottom: 0.1rem solid transparent;
+    
 }
 
 .header .navbar .active,
@@ -98,11 +100,12 @@ section {
     font-size: 2.5rem;
     margin-left: 2rem;
     background-color: transparent;
+    color: white;
 }
 
 .home {
     min-height: 100vh;
-    background: url(../../src/image/cesium_osm.png) no-repeat;
+    background: url(https://i.pinimg.com/originals/81/26/7d/81267dec1d4578c4a954894cf7609415.gif) no-repeat;
     background-size: cover;
     background-position: center;
     margin-top: -7.8rem;
@@ -127,9 +130,17 @@ section {
     color: #ccc;
 }
 
+.agro {
+    border-radius: 10rem;
+    padding: 1rem 0%;
+}
+
 .agro h1 {
     font-size: 4rem;
     color: white;
     text-align: center;
 }
 
+.cesium-widget-credits{
+    display:none !important;
+}

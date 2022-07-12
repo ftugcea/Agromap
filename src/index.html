@@ -1,67 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" 
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
-  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
-  crossorigin="anonymous" 
-  referrerpolicy="no-referrer" />
-  <title>Agriculturel Map</title>
-  <link rel="stylesheet" href="src\css\main.css">
   <script src="https://cesium.com/downloads/cesiumjs/releases/1.94/Build/Cesium/Cesium.js"></script>
   <link href="https://cesium.com/downloads/cesiumjs/releases/1.94/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
-    <a href="#" class="logo">
-      <img src="src\image\cesium_osm.png" alt="logo" />
-    </a>
-    <nav class="navbar">
-      <a href="#" class="active" >Home</a>
-      <a href="#" >About</a>
-      <a href="#" >Agro Map</a>
-      <a href="#" >Products</a>
-      <a href="#" >Review</a>
-      <a href="#" >Contact</a>
-      <a href="#" >Blogs</a>
-    </nav>
-
-    <div class="buttons">
-      <button>
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
-      <button>
-        <i class="fa-solid fa-cart-shopping"></i>
-      </button>
-      <button>
-        <i class="fa-solid fa-bars"></i>
-      </button>
+  <div id="cesiumContainer"></div>
+  <div id="loadingOverlay"><h1>Loading...</h1></div>
+    <div id="toolbar">
+        <select class="cesium-button" id="dropdown">
+        <option value="0">Apply Basic Style</option>
+        <option value="1">Show Features Based on Property</option>
+        <option value="2">Color Features with Conditions</option>
+      </select>
     </div>
-  </header>
-  
-  <section class="home">
-    <div class="content">
-      <h3>Agro Map within the City</h3>
-      <p>
-        Lorem ipsum dolor sit amet. In perspiciatis minus est beatae harum aut accusamus officiis aut quia dolores maiores quibusdam. A doloremque iusto nam doloribus ipsum id provident impedit eum sint sunt ut numquam neque.
-      </p>
-      <a href="#" class="btn">Order Now</a>
-    </div>
-  </section>
-
-  <section class="agro">
-    <h1>Agro Map in Beykoz</h1>
-    <div id="cesiumContainer"></div>
-    <script src= "src\index.js" charset="utf-8"></script>
-  </section>
-
-  <section class="products">
-
-  </section>
-
+  <script src= "src\index.js" charset="utf-8"></script>
 </body>
 </html>
